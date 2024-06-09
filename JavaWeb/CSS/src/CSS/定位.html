@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      .color1{
+        /*绝对声明后需要指定绝对位置的内容*/
+        /*position: absolute; */
+        background-color: red;
+        /*拖拽有惊喜*/
+        bottom: 100px;
+        right: 100px;
+      }
+      .color2{
+        /*相对与元素原本的位置，切不会被文档流限制，毕竟相对与原位置，原位置被占领了像话吗*/
+        /*position:relative;*/
+        background-color: greenyellow;
+        top: 30px;
+        left: 30px;
+      }
+      .color3{
+        /*相对于浏览器窗口边缘*/
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: aqua;
+      }
+      .innerDiv{
+        width:100px;
+        height:100px;
+        border:1px solid blue;
+      }
+    /*
+    position：
+      static 默认
+      relative 相对
+      fixed 相对
+      absolute 绝对
+    left
+    right
+    top
+    bottom
+    */
+    </style>
+</head>
+<body>
+<div class="innerDiv color1">a</div>
+<div class="innerDiv color2">b</div>
+<div class="innerDiv color3">c</div>
+</body>
+</html>

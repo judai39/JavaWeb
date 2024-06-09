@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+      /**所谓盒子模型:
+        将目标div按照类似于元素的增加,删除对目标的盒子进行操作
+      */
+    .innerDiv{
+      width:100px;
+      height:100px;
+      border:1px solid blue;
+      float: left;
+    }
+    .color1{
+      background-color: red;
+        /**对盒子边界外围操作*/
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+
+    }
+    .color2{
+      background-color: greenyellow;
+        /**对盒子边界内部操作*/
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .color3{
+      background-color: aqua;
+        /**对盒子内部四周操作*/
+        padding: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="innerDiv color1">a</div>
+<div class="innerDiv color2">b</div>
+<div class="innerDiv color3">c</div>
+</body>
+</html>

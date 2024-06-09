@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      /*
+      1.元素选择器
+        缺点：只能作用到指定标签内的元素（在本例中的按钮原件就无法作用到）
+      */
+      /*input{
+        width:80px;
+        height:40px;
+        background-color: green;
+        border:3px solid green;
+        font-size:22px;
+        font-family: "楷体";
+        line-height: 30px;
+        border-radius: 5px;
+      }*/
+
+
+    /*
+        2.id选择器
+    */
+      /*#btn1{
+          width:80px;
+          height:40px;
+          background-color: green;
+          border:3px solid green;
+          font-size:22px;
+          font-family: "楷体";
+          line-height: 30px;
+          border-radius: 5px;
+      }*/
+
+
+    /*  3.class选择器*/
+      .btn{
+          width:80px;
+          height:40px;
+          background-color: green;
+          border:3px solid green;
+          font-size:22px;
+          font-family: "楷体";
+          line-height: 30px;
+          border-radius: 5px;
+      }
+      一般使用class选择器是功能块形式（class值可以多个）
+
+      .shapeClass{
+          width: 80px;
+          height: 40px;
+          border-radius: 5px;
+      }
+      .colorClass{
+          background-color: green;
+          color: wheat;
+          border: 3px solid green;
+      }
+      .fontClass{
+          font-size: 20px;
+          font-family: "楷体";
+          line-height: 30px;
+      }
+    </style>
+</head>
+<body>
+<!--注意行内样式style与css选择器属性的优先级,style优先级大于css-->
+<input type="button" value="按钮" id="btn1" class="shapeClass fontClass">
+<input type="button" value="按钮" id="btn2" class="shapeClass">
+<input type="button" value="按钮" id="btn3" class="shapeClass">
+<input type="button" value="按钮" id="btn4" class="shapeClass fontClass colorClass">
+<button id="btn5" class="btn">按钮</button>
+</body>
+</html>
